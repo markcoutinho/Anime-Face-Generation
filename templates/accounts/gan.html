@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <title>Anime</title>
+  </head>
+  <style>
+    body {
+      background: url("{% static 'accounts\/media\/gan_bg.jpg' %}") no-repeat
+        0px 0px;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    h1 {
+      font-family: "Bungee", cursive;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      color: white;
+    }
+    img {
+      margin: 40px;
+      transition: all .8s ease;
+    }
+    /* img.down {
+      margin-top: 80px;
+    }       */
+    img:hover {
+      -webkit-transform: scale(1.08);
+      transform: scale(1.6);
+    }  
+    div.head {
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <div class="fluid-container">
+      <div class="row head">
+        <div class="col">
+          <h1 class="display-1 text-light">Anime Face Generation</h1>
+          <button class="btn btn-info btn-md m-4 mt-0 text-light">
+            <a
+              href="{% url 'accounts:gan' %}"
+              >Generate New Faces</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-9">
+          <img
+            src="{% static 'generated-images/0.png' %}"
+            class="down"
+            width="170px"
+            height="170px"
+          />
+          <img
+            src="{% static 'generated-images/1.png' %}"
+            width="170px"
+            height="170px"
+          />
+          <img
+            src="{% static 'generated-images/2.png' %}"
+            class="down"            
+            width="170px"
+            height="170px"
+          />
+          <img
+            src="{% static 'generated-images/3.png' %}"
+            width="170px"
+            height="170px"
+          />                    
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-9">
+          <img
+            src="{% static 'generated-images/4.png' %}"
+            width="170px"
+            height="170px"
+          />
+          <img
+            src="{% static 'generated-images/5.png' %}"
+            class="down"            
+            width="170px"
+            height="170px"
+          />
+          <img
+            src="{% static 'generated-images/6.png' %}"            
+            width="170px"
+            height="170px"
+          />
+          <img
+            src="{% static 'generated-images/7.png' %}"
+            class="down"            
+            width="170px"
+            height="170px"
+          />                    
+        </div>
+      </div>      
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
