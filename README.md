@@ -1,3 +1,3 @@
 # Anime-Face-Generation
-GAN’s based deep learning  model for generating anime face images using DCGANS
+A Django based web application for anime face generation using DCGAN
 ##### https://www.kaggle.com/gnitch/animefacegeneration-dcgan
